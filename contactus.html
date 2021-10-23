@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style1.css">
+        <script>
+        function navAction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className == "onTopNav") {
+                x.className += " responsive";
+            } else {
+                x.className = "onTopNav";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <br>
+    <h1 align="center">NAAG Tobacco Settlement Payments</h1>
+    <br>
+    <div class="bg-img">
+        <div class="container">
+            <div class="onTopNav" id="myTopnav">
+                <a class="active" href="index.html">Home</a>
+                <a href="settlement.html">Settlement</a>
+                <a href="nationalData.html">Nationwide</a>
+                <a href="aboutus.html">About Us</a>
+                <a href="javascript:void(0);" class="icon" onclick="navAction()">
+                </a>
+            </div>
+        </div>
+    </div>
+    <br><h3>Contact Us:</h3><br>
+
+
+</body>
+</html>
