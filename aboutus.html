@@ -2,8 +2,9 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style1.css">
-    
+
     <script>
         function navAction() {
             var x = document.getElementById("myTopnav");
@@ -16,7 +17,42 @@
     </script>
 </head>
 <body>
-
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NAAG Tobacco Settlement</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.naag.org/">NAAG Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Settlement Data
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="settlement.html">Settlement</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+                <!--<form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>-->
+            </div>
+        </div>
+    </nav>
     <br>
     <h1 align="center">NAAG Tobacco Settlement Payments</h1>
     <div class="bg-img">
@@ -32,58 +68,101 @@
         </div>
     </div>
     <div id="content">
-        <div class="abtus">
-            <h1>About us</h1>
-            <p align="justify">
-                We are Group 3 of Distributed Information System Course of Fall 2021 (ISM 6225) at University of South Florida. We are pursuing MS in Business Analytics &
-                Information Systems, , from Muma College of Business. This assignment is intended to help us practice html, css and optionally,
-                JavaScript to get good design results. Please find our contact details below
-                We learnt the following while designing and developing this website
-                Hands on experience with advanced HTML and CSS.
-                Implemented many new and latest CSS styling properties such as floating social icons, color changing menu, floating footer, pages consistency templatized,
-                circular objects, tables, dropdowns, forms, Document Object Model (DOM) and many others
-                Mobile responsiveness, multi device adaptability, compressed images for uniform size and quickloading and maintaining consistency of look and feel
-                We also practised Object Oriented Class Diagram. The project is available in the Github Repository.
-
-            </p>
-        </div>
-
-        <div>
-            <div class=member>
-                <img src="img/Anthony.png">
-                <h3 align="center">Anthony Mccofie</h3>
+        <div class="Para">
+            <div style="padding-left:20px; padding-right:20px">
+                <h1><u>About Us</h1></u>
                 <p align="justify">
-                    Currently a student at USF's XYZ graduate program,
-                    About You. His contributions include
-                    designing and developing various pages of the website.
+                    We are Group 6 of Distributed Information System Course of Fall 2021 (ISM 6225) at University of South Florida. We are pursuing MS in Business Analytics &
+                    Information Systems from the Muma College of Business. This assignment is intended to help us practice html, css, and
+                    JavaScript to get good design results. Please find our contact details below.
+                    <br /> <br />
+                    We learned the following while designing and developing this website:
+                    <br />
+                    <ul>
+
+                        <li>Hands on experience with advanced HTML and CSS.</li>
+                        <li>
+                            Implemented many new and latest CSS styling properties such as floating social icons, color changing menu, floating footer, pages consistency templatized,
+                            circular objects, tables, dropdowns, forms, Document Object Model (DOM) and many others
+                        </li>
+                        <li>
+                            Mobile responsiveness, multi device adaptability, compressed images for uniform size and quickloading and maintaining consistency of look and feel.
+                        </li>
+                        <li>
+                            Object Oriented Class Diagramming.
+                        </li>
+
+                    </ul>
+                    <br />
+                    The project is available in the team <b><a href="https://github.com/mariahcodi/LookandFeel"> Github Repository</a></b>.
+
                 </p>
             </div>
-            <div class=member>
-                <img src="img/Devesh.jpeg">
-                <h3 align="center">Devesh Singh Tomar</h3>
-                <p align="justify">
-                    A graduate student in Business Analytics and Information Systems at USF,Devesh has
-                    11 months of experience as a Data analyst. His
-                    contributions include designing and developing various pages of the website.
-                </p>
-            </div>
-            <div class=member>
-                <img src="img/Mariah.png">
-                <h3 align="center">Mariah Atherton</h3>
-                <p align="justify">
-                    Mariah is a student at USF's XYZ graduate program.
-                    About You. She contributed in designing the database
-                    model to store the data from data.gov and also helped in designing the webpage.
-                </p>
-            </div>
-        </div>
 
-        <div class=datamodel>
-            <h1>Data Model:</h1>
-            <img src="img/Picture.png">
-        </div>
+            <!--cards for about us-->
+        <div class="container">
+            <div class="row">
+                <div class="card" style="width: 30rem;">
+                    <div style="color:black">
+                    <img src="img/Devesh.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Devesh Singh Tomar</h5>
+                        <p class="card-text">
+                            <p style="color:black";>
+                            A graduate student in Business Analytics and Information Systems at USF, Devesh has
+                            11 months of experience as a Data Analyst. His
+                            contributions include designing and developing various pages of the website.
+                        </p>
+                        <a href="#" class="btn btn-primary">Devesh's Github</a>
+                    </div>
+                </div>
+                <div class="card m-2" style="width: 18rem;">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
 
-    </div>
+
+            <div>
+                <div class=member>
+                    <img src="img/Anthony.png">
+                    <h3 align="center">Anthony Mccofie</h3>
+                    <p align="justify">
+                        Currently a student at USF's XYZ graduate program,
+                        About You. His contributions include
+                        designing and developing various pages of the website.
+                    </p>
+                </div>
+                <div class=member>
+                    <img src="img/Devesh.jpeg">
+                    <h3 align="center">Devesh Singh Tomar</h3>
+                    <p align="justify">
+                        A graduate student in Business Analytics and Information Systems at USF,Devesh has
+                        11 months of experience as a Data analyst. His
+                        contributions include designing and developing various pages of the website.
+                    </p>
+                </div>
+                <div class=member>
+                    <img src="img/Mariah.png">
+                    <h3 align="center">Mariah Atherton</h3>
+                    <p align="justify">
+                        Mariah is a student at USF's XYZ graduate program.
+                        About You. She contributed in designing the database
+                        model to store the data from data.gov and also helped in designing the webpage.
+                    </p>
+                </div>
+            </div>
+
+            <div class=datamodel>
+                <h1>Data Model:</h1>
+                <img src="img/Picture.png">
+            </div>
+
+        </div>
 </body>
 </html>
 
