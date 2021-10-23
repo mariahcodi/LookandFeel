@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
+
 }
 
 * {
@@ -98,11 +99,11 @@ body {
 
 
 /* Position the navbar container inside the image */
-.container {
+/*.container {
     position: absolute;
     margin: 20px;
     width: auto;
-}
+}*/
 
 /* The navbar */
 .onTopNav {
@@ -164,8 +165,8 @@ body {
 }
 
 .pics{
-    width: 250px;
-    height: 350px;
+    width: 300px;
+    height: 400px;
 }
 
 .Para {
