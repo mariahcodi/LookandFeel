@@ -97,6 +97,11 @@ body {
         }
 }
 
+.pics{
+    width: 200px;
+    height: 121px;
+}
+
 .Para {
     color: #f2f2f2;
 }
