@@ -83,10 +83,11 @@ body {
 .bg-img {
     /* The image used */
     /*    background-image: url('img/settlement-bkg1.png');
-    background-image: url('img/cigarettes.jpg');
+    
     background-image: url('img/cig.jpg');
-    background-image: url('img/addict.jpg');*/
-    background-image: url('https://i.makeagif.com/media/2-06-2016/Vd6AO9.gif');
+    background-image: url('img/addict.jpg');
+    background-image: url('https://i.makeagif.com/media/2-06-2016/Vd6AO9.gif');*/
+    background-image: url('img/Smoking.jpg');
     /*min-height: 380px;*/
     min-height: 380px;
     /* Center and scale the image nicely */
