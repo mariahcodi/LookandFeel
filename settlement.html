@@ -2,23 +2,23 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style1.css">
-        <style>
-            table {
-                font-family: arial, sans-serif;
-                border-collapse: collapse;
-                width: 100%;
-                border-spacing: 0px;
-            }
+    <style>
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            border-spacing: 0px;
+        }
 
-            td, th {
-                border: 1px solid #dddddd;
-                text-align: left;
-                padding: 10px;
-            }
-            
-        </style>
-        <script>
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 10px;
+        }
+    </style>
+    <script>
         function navAction() {
             var x = document.getElementById("myTopnav");
             if (x.className == "onTopNav") {
@@ -30,72 +30,105 @@
     </script>
 </head>
 <body>
-
-    <br>
-    <h1 align="center">NAAG Tobacco Settlement Payments</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">NAAG Tobacco Settlement</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.naag.org/">NAAG Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="settlement.html">Settlement Data</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nationalData.html">National Coverage Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutus.html">About Us</a>
+                    </li>
+                </ul>
+                <!--<form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>-->
+            </div>
+        </div>
+    </nav>
     <div class="bg-img">
-        <div class="container">
-            <div class="onTopNav" id="myTopnav">
+        <div class="fade-in-text fade-out-text">
+            <div style="text-align:center">
+                <p>
+                    In fiscal year 2020, states will collect $27.2 billion from tobacco taxes and settlements in court, but will only spend $740 million in the same year. That’s only 2.7% of it spent on programs that can stop young people from becoming smokers and help current smokers quit.                    <br /><br />
+                    Learn more at <a href="https://www.cdc.gov/tobacco/">cdc.gov/tobacco</a>.
+                </p>
+                <!--<div class="onTopNav" id="myTopnav">
                 <a class="active" href="index.html">Home</a>
                 <a href="settlement.html">Settlements</a>
                 <a href="nationalData.html">National</a>
                 <a href="aboutus.html">About Us</a>
                 <a href="javascript:void(0);" class="icon" onclick="navAction()">
-                </a>
+                </a>-->
             </div>
         </div>
     </div>
-    <br><h3>Settlements:</h3>
-     <table style="width:100%">
-            <tr>
-                <th align="left" style="color:white;background-color:#3173AD;">State</th>
-                <th align="left" style="color:white;background-color:#3173AD;">Year</th>
-                <th align="left" style="color:white;background-color:#3173AD;">Topic</th>
-                <th align="left" style="color:white;background-color:#3173AD;">Indicator</th>
-                <th align="left" style="color:white;background-color:#3173AD;">SubMeasure</th>
-                <th align="left" style="color:white;background-color:#3173AD;">Amount</th>
-                <th align="left" style="color:white;background-color:#3173AD;">Source</th>
+    <br><h3 style="color:white">NAAG Tobacco Settlements Data (1998-2020):</h3>
+    <table style="width:100%">
+        <tr>
+            <th align="left" style="color:white;background-color:#3173AD;">State</th>
+            <th align="left" style="color:white;background-color:#3173AD;">Year</th>
+            <th align="left" style="color:white;background-color:#3173AD;">Topic</th>
+            <th align="left" style="color:white;background-color:#3173AD;">Indicator</th>
+            <th align="left" style="color:white;background-color:#3173AD;">SubMeasure</th>
+            <th align="left" style="color:white;background-color:#3173AD;">Amount</th>
+            <th align="left" style="color:white;background-color:#3173AD;">Source</th>
 
-            </tr>
-            <tr>
-                <td>North Carolina</td>
-                <td>2011</td>
-                <td>Tobacco Settlement</td>
-                <td>Tobacco Settlement Payment</td>
-                <td>Tobacco Settlement Revenue - NAAG</td>
-                <td>$138,256,209.09</td>
-                <td>National Association of Attorneys General</td>
-            </tr>
-            <tr>
-                <td>Missouri</td>
-                <td>2016</td>
-                <td>Tobacco Settlement</td>
-                <td>Tobacco Settlement Payment</td>
-                <td>Tobacco Settlement Revenue - NAAG</td>
-                <td>$123,372,400.49</td>
-                <td>National Association of Attorneys General</td>
-            </tr>
-            <tr>
-                <td>Louisiana</td>
-                <td>2000</td>
-                <td>Tobacco Settlement</td>
-                <td>Tobacco Settlement Payment</td>
-                <td>Tobacco Settlement Revenue - NAAG</td>
-                <td>$129,755,834.96</td>
-                <td>National Association of Attorneys General</td>
-            </tr>
-            <tr>
-                <td>Kansas</td>
-                <td>2019</td>
-                <td>Tobacco Settlement</td>
-                <td>Tobacco Settlement Payment</td>
-                <td>Tobacco Settlement Revenue - NAAG</td>
-                <td>$55,989,218.94</td>
-                <td>National Association of Attorneys General</td>
-            </tr>
+        </tr>
+        <tr>
+            <td>North Carolina</td>
+            <td>2011</td>
+            <td>Tobacco Settlement</td>
+            <td>Tobacco Settlement Payment</td>
+            <td>Tobacco Settlement Revenue - NAAG</td>
+            <td>$138,256,209.09</td>
+            <td>National Association of Attorneys General</td>
+        </tr>
+        <tr>
+            <td>Missouri</td>
+            <td>2016</td>
+            <td>Tobacco Settlement</td>
+            <td>Tobacco Settlement Payment</td>
+            <td>Tobacco Settlement Revenue - NAAG</td>
+            <td>$123,372,400.49</td>
+            <td>National Association of Attorneys General</td>
+        </tr>
+        <tr>
+            <td>Louisiana</td>
+            <td>2000</td>
+            <td>Tobacco Settlement</td>
+            <td>Tobacco Settlement Payment</td>
+            <td>Tobacco Settlement Revenue - NAAG</td>
+            <td>$129,755,834.96</td>
+            <td>National Association of Attorneys General</td>
+        </tr>
+        <tr>
+            <td>Kansas</td>
+            <td>2019</td>
+            <td>Tobacco Settlement</td>
+            <td>Tobacco Settlement Payment</td>
+            <td>Tobacco Settlement Revenue - NAAG</td>
+            <td>$55,989,218.94</td>
+            <td>National Association of Attorneys General</td>
+        </tr>
 
 
-        </table>
+    </table>
 
 </body>
 </html>
